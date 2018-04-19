@@ -1,0 +1,34 @@
+/*
+Theme Name: WP Bootstrap4 Sass
+Theme URI: https://github.com/tone4hook
+Author: tone4hook
+Author URI: https://github.com/tone4hook
+Description: WP Bootstrap 4 Sass is a "clean slate" Wordpress theme that is Sass enabled with Bootstrap 4 to speed up development.
+Version: 1.0
+License: MIT License
+License URI: https://opensource.org/licenses/MIT
+Text Domain: wpbootstrapsass
+Tags: Bootstrap 4, Sass, HTML5, blank, responsive, CSS3, template, boilerplate, starter theme
+
+This theme is licensed under the MIT.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// Modules
+@import "modules/variables";
+@import "modules/mixins";
+@import "modules/fonts";
+
+// Partials
+@import "partials/body";
+@import "partials/wordpress";
+@import "partials/utils";
+@import "partials/wrapper";
+@import "partials/header";
+@import "partials/nav";
+@import "partials/sidebar";
+@import "partials/footer";
+@import "partials/print";

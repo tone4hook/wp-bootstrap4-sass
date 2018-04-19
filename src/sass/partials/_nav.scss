@@ -1,0 +1,11 @@
+/**
+ * partials/nav
+ * ---
+ * Menus
+ */
+
+// For sub-navigation in the navbar menu
+// **Only 1 level of sub-navigation is configured**
+li.dropdown:hover > .dropdown-menu {
+    display: block;
+}
