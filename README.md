@@ -6,6 +6,7 @@ A clean slate Wordpress theme template with Bootstrap(4), Sass, and a Webpack co
 
 * Clone or download into your themes folder
 * Using command line(Terminal or Command Prompt) navigate to wp-bootstrap4-sass directory
+* *npm update --save-dev*  to update all devDependencies
 * Run *npm update*
 * Run *npm start* for Webpack development build
 * Run *npm run build* for Webpack production build
