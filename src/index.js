@@ -1,14 +1,14 @@
-import 'jquery';
-import 'popper.js';
-import 'bootstrap';
+import $ from "jquery";
+import "popper.js";
+import "bootstrap";
 // Can import modules as needed
 // ex. import 'bootstrap/js/dist/dropdown';
-import './sass/style.scss';
+import "./sass/style.scss";
 
-'use strict';
+"use strict";
 
 (function($) {
 	$(function() {
-		console.log('Document Ready');
+		console.log("Document Ready");
 	});
 })(jQuery);
