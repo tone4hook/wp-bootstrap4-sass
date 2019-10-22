@@ -44,32 +44,47 @@ if (function_exists('add_theme_support'))
 	Functions
 \*------------------------------------*/
 
-// Register Custom Navigation Walker
-require_once('inc/class-wp-bootstrap-navwalker.php');
-
 // WP Bootstrap Sass navigation
 function wpbootstrapsass_nav()
 {
 	wp_nav_menu(
 	array(
 		'theme_location'  => 'header-menu',
-		'menu'            => '',
-		'container'       => 'div',
-		'container_class' => 'collapse navbar-collapse',
-		'container_id'    => 'bs-example-navbar-collapse-1',
-		'menu_class'      => 'navbar-nav ml-auto',
-		'menu_id'         => '',
-		'echo'            => true,
-		'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
-		'before'          => '',
-		'after'           => '',
-		'link_before'     => '',
-		'link_after'      => '',
-		'depth'           => 2,
-		'walker'          => new WP_Bootstrap_Navwalker()
-		)
+        'menu'            => '',
+        'container'       => 'div',
+        'container_class' => 'collapse navbar-collapse',
+        'container_id'    => 'bs-example-navbar-collapse-1',
+        'menu_class'      => 'nav navbar-nav',
+        'menu_id'         => '',
+        'echo'            => true,
+        'before'          => '',
+        'after'           => '',
+        'link_before'     => '',
+        'link_after'      => '',
+        'items_wrap'      => '<ul class="nav navbar-nav navbar-right">%3$s</ul>',
+        )
 	);
 }
+
+// add bootstrap css class to menu <li> element
+function atg_menu_classes($classes, $item, $args) {
+    if ($args->theme_location == 'header-menu') {
+      $classes[] = 'nav-item';
+    }
+    return $classes;
+}
+add_filter('nav_menu_css_class', 'atg_menu_classes', 1, 3);
+
+// add bootstrap css class to menu <a> element
+function add_specific_menu_location_atts( $atts, $item, $args ) {
+    // check if the item is in the header menu
+    if( $args->theme_location == 'header-menu' ) {
+      // add the desired attributes:
+      $atts['class'] = 'nav-link';
+    }
+    return $atts;
+}
+add_filter( 'nav_menu_link_attributes', 'add_specific_menu_location_atts', 10, 3 );
 
 // Load WP Bootstrap Sass scripts (header.php)
 function wpbootstrapsass_header_scripts()
