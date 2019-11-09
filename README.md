@@ -34,7 +34,6 @@ A clean slate Wordpress theme template with Bootstrap(4), Sass, and a Webpack co
 
 ## Acknowledgements
 
-* [WP Bootstrap Navwalker](https://github.com/wp-bootstrap/wp-bootstrap-navwalker)
 * [HTML 5 Blank](https://github.com/toddmotto/html5blank)
 
 ## License
