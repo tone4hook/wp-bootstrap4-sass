@@ -43,3 +43,7 @@ node_modules/
 # Sass cache #
 ######################
 .sass-cache/
+
+# VS Code workspace #
+######################
+*.code-workspace
