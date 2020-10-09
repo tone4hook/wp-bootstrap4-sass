@@ -8,7 +8,7 @@ _This can be a decent starting point for simple theme development._
 - Clone or download into your themes folder
 - Using command line(Terminal or Command Prompt) navigate to wp-bootstrap4-sass directory
 - Run `npm install`
-- Run _npm start_ for Webpack development build
+- Run `npm start` for Webpack development build
 - Run `npm run build` for Webpack production build
 - Webpack config has `watch: true` for live compiling of JS and Sass
 
