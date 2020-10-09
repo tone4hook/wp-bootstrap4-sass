@@ -5,10 +5,10 @@ import "bootstrap";
 // ex. import 'bootstrap/js/dist/dropdown';
 import "./sass/style.scss";
 
-"use strict";
+("use strict");
 
-(function($) {
-	$(function() {
+(function ($) {
+	$(function () {
 		console.log("Document Ready");
 	});
-})(jQuery);
+})($);
