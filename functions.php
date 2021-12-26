@@ -1,6 +1,9 @@
 <?php
-/*
- *  WP Bootstrap 4 Sass Custom functions, support, custom post types and more.
+/* WP Bootstrap 5 Sass Custom functions, support, custom post types and more.
+ *  Author: ahmadzein
+ *  URL: https://github.com/ahmadzein
+ *  Forked from on:
+ *  WP Bootstrap 5 Sass Custom functions, support, custom post types and more.
  *  Author: tone4hook
  *  URL: https://github.com/tone4hook
  *
