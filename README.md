@@ -16,9 +16,9 @@ _This can be a decent starting point for simple theme development._
 
 - [Babel](https://babeljs.io/)
 - [babel-loader](https://github.com/babel/babel-loader)
-- [babel-preset-env](https://github.com/babel/babel/tree/master/packages/babel-preset-env)
+- [babel-preset-env](https://babel.dev/docs/en/babel-preset-env)
 - [css-loader](https://www.npmjs.com/package/css-loader)
-- [extract-text-webpack-plugin ^4.0.0-beta.0](https://github.com/webpack-contrib/extract-text-webpack-plugin)
+- [mini-css-extract-plugin](https://github.com/webpack-contrib/mini-css-extract-plugin)
 - [node-sass](https://www.npmjs.com/package/node-sass)
 - [sass-loader](https://www.npmjs.com/package/sass-loader)
 - [style-loader](https://www.npmjs.com/package/style-loader)
