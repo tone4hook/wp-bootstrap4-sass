@@ -4,7 +4,6 @@ const path = require("path");
 
 const webpack = require("webpack"); // reference to webpack Object
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const devMode = process.env.NODE_ENV !== "production";
 
 // Constant with our paths
 const paths = {
