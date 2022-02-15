@@ -22,7 +22,6 @@ _This can be a decent starting point for simple theme development._
 - [node-sass](https://www.npmjs.com/package/node-sass)
 - [sass-loader](https://www.npmjs.com/package/sass-loader)
 - [style-loader](https://www.npmjs.com/package/style-loader)
-- [uglifyjs-webpack-plugin](https://www.npmjs.com/package/uglifyjs-webpack-plugin)
 - [webpack](https://webpack.js.org/)
 - [webpack-cli](https://webpack.js.org/api/cli/)
 
